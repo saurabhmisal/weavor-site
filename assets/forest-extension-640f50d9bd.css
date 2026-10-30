@@ -1,0 +1,314 @@
+.forest-hero h1 {
+  font-size: clamp(2.75rem, 3.8vw, 3.5rem);
+  line-height: 1.1;
+}
+.forest-hero h1 span {
+  display: block;
+  font: inherit;
+}
+.forest-hero .hero-copy > p {
+  max-width: 40ch;
+}
+.forest-subnav {
+  background: var(--sand);
+  border-bottom: 1px solid var(--line);
+}
+.forest-subnav .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 28px;
+  padding-block: 12px;
+}
+.forest-subnav a {
+  font-size: 1rem;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 72px;
+  align-items: start;
+}
+.overview-grid .prose p {
+  margin-top: 20px;
+}
+.at-a-glance {
+  background: var(--sand);
+  padding: 28px;
+}
+.at-a-glance h3 {
+  margin-bottom: 20px;
+}
+.at-a-glance dt {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.at-a-glance dd {
+  margin: 4px 0 20px;
+}
+.at-a-glance dd:last-child {
+  margin-bottom: 0;
+}
+.wildlife {
+  background: white;
+}
+.wildlife-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+}
+.wildlife-card {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+.wildlife-card h3 {
+  font-size: 1.375rem;
+  margin-bottom: 12px;
+}
+.wildlife-card ul {
+  padding-left: 20px;
+  margin: 0;
+}
+.wildlife-card li {
+  margin-bottom: 6px;
+}
+.wildlife-card summary {
+  font-size: 1rem;
+  padding-block: 14px;
+}
+.observations {
+  border-top: 1px solid var(--line);
+  margin-top: 36px;
+  padding-top: 28px;
+}
+.observations h3 {
+  margin-bottom: 20px;
+}
+.observations ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.observations li {
+  border-left: 2px solid var(--rust);
+  padding-left: 16px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: start;
+}
+.gallery-grid figure {
+  min-width: 0;
+}
+.gallery-grid figcaption {
+  margin-top: 14px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.gallery-grid figcaption span {
+  display: block;
+  font-size: 0.875rem;
+  margin-top: 6px;
+  color: #575b50;
+}
+.gallery-more {
+  margin-top: 24px;
+}
+.gallery-more > summary {
+  font-size: 1rem;
+}
+.gallery-more .gallery-grid {
+  margin-top: 12px;
+}
+.forest-facts {
+  background: var(--sand);
+}
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin: 28px 0;
+}
+.facts-grid > div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: start;
+  gap: 10px;
+}
+.facts-grid dt {
+  font-size: 1rem;
+}
+.facts-grid dd {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0;
+  font-weight: 550;
+}
+.forest-facts .source-note {
+  max-width: 90ch;
+}
+.forest-facts details {
+  margin-top: 16px;
+  max-width: 90ch;
+}
+.forest-facts summary {
+  font-size: 1rem;
+  padding-block: 12px;
+}
+.sources {
+  padding-left: 20px;
+  margin: 0;
+  font-size: 0.875rem;
+}
+.sources a {
+  display: inline-block;
+  padding-block: 6px;
+  min-height: 36px;
+  overflow-wrap: anywhere;
+}
+.travel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+.travel-grid h3 {
+  margin-bottom: 16px;
+}
+.travel-grid article {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+.travel-note {
+  margin-top: 28px;
+  font-size: 0.875rem;
+}
+.other-forests .more-reserve-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 28px;
+}
+.other-forests .more-reserve-name {
+  font-size: 1.5rem;
+}
+@media (max-width: 1100px) {
+  .overview-grid {
+    gap: 40px;
+  }
+  .wildlife-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .forest-hero h1 {
+    font-size: 3rem;
+    max-width: 23ch;
+  }
+  .forest-hero h1 span {
+    display: inline;
+  }
+  .forest-hero .hero-copy > p {
+    max-width: 55ch;
+  }
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .at-a-glance dl {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 12px 20px;
+  }
+  .at-a-glance dd {
+    margin: 0;
+  }
+  .gallery-grid {
+    gap: 24px;
+  }
+  .travel-grid {
+    grid-template-columns: 1fr;
+  }
+  .travel-grid p {
+    max-width: 65ch;
+  }
+  .observations ul {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .forest-hero h1 {
+    font-size: 2.125rem;
+    line-height: 1.16;
+  }
+  .forest-subnav .wrap {
+    gap: 0 20px;
+  }
+  .overview-grid {
+    gap: 28px;
+  }
+  .at-a-glance {
+    padding: 24px;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .gallery-grid figure {
+    max-width: 520px;
+  }
+  .facts-grid {
+    gap: 24px;
+    grid-template-columns: 1fr;
+  }
+  .facts-grid > div {
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+  .facts-grid dd {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 2rem;
+  }
+  .facts-grid dt {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .other-forests .more-reserve-grid {
+    grid-template-columns: 1fr;
+  }
+  .wildlife-grid {
+    gap: 24px;
+  }
+  .wildlife-card h3 {
+    font-size: 1.375rem;
+  }
+  .forest-facts .source-note {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 374px) {
+  .wildlife-grid {
+    grid-template-columns: 1fr;
+  }
+  .at-a-glance dl {
+    display: block;
+  }
+  .at-a-glance dd {
+    margin: 6px 0 20px;
+  }
+  .facts-grid > div {
+    grid-template-columns: 5rem 1fr;
+  }
+}
+.sources a {
+  min-height: 44px;
+  padding-block: 10px;
+}

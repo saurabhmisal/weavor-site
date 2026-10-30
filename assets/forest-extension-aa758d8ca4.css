@@ -1,0 +1,40 @@
+
+.forest-page .hero-caption { align-items: baseline; }
+.forest-page .forest-credits { font-size: 10px; color: #5a5d53; line-height: 1.6; }
+.forest-page .naturalist-figure img { width: 100%; }
+.forest-page .lesson .forest-life-list { margin: 0; padding: 0; list-style: none; }
+.forest-page .lesson .forest-life-list li { font-size: 13px; color: #5a5d53; line-height: 1.7; padding: 6px 0; border-bottom: 1px solid #d5d5c9; }
+.forest-page .lesson .forest-life-list li:last-child { border: 0; }
+.forest-page .forest-life-extra { font-size:12px; color:#5a5d53; margin-top:14px; }
+.forest-page .forest-fact-details { display:grid; grid-template-columns: 1fr 1fr; gap:7vw; padding-top: 32px; margin-top: 45px; border-top:1px solid var(--line); }
+.forest-page .forest-fact-details p { font-size:13px; color:#5a5d53; }
+.forest-page .forest-photo-card { min-width:0; }
+.forest-page .forest-photo-card .reserve-image-button { cursor:default; }
+.forest-page .forest-photo-card .reserve-image-button:hover img { transform:none; }
+.forest-page .forest-photo-card h3 { font-size:clamp(21px,2.0vw,27px); }
+.forest-page .forest-photo-card .reserve-card-title { max-width:none; font-size:11px; line-height:1.6; }
+.forest-page .forest-gallery-note { font-size:12px; color:#606459; margin-top:35px; max-width:890px; }
+.forest-page .forest-stat-grid dd { font-size: clamp(36px,3.7vw,55px); overflow-wrap:anywhere; }
+.forest-page .forest-stat-grid dt { font-size:11px; line-height:1.5; }
+.forest-page .forest-stat-grid { margin-top:27px; }
+.forest-page .forest-journey-note { font-size:11px; color:#5a5d53; margin-top:27px; }
+.forest-page .forest-other-grid > a { text-decoration:none; }
+.forest-page .forest-other-grid .more-reserve { cursor:pointer; }
+.forest-page .forest-sources { padding-top:35px; padding-bottom:35px; border-top:1px solid var(--line); }
+.forest-page .forest-sources details { color:#666a60; font-size:12px; }
+.forest-page .forest-sources summary { cursor:pointer; }
+.forest-page .forest-sources a { text-decoration:underline; text-underline-offset:3px; }
+.forest-page .forest-sources li { margin:9px 0; }
+.forest-page .forest-sources p { font-size:11px; line-height:1.8; }
+.forest-page .forest-feedback { font-size:12px; margin-top:18px; color:#4a5544; }
+.forest-page .forest-feedback[hidden] { display:none; }
+.forest-page .forest-cta-note { font-size:10px; margin-top:14px; color:#686d5c; }
+.forest-page .forest-form-readonly { opacity:.85; }
+.forest-page .footer-top a { cursor:pointer; }
+.forest-page .forest-noscript { padding:24px 6vw; background:var(--sand); }
+.forest-page .enquiry-panel [hidden] { display:none; }
+.forest-page .enquiry-ready dd { overflow-wrap:anywhere; white-space:pre-line; }
+.forest-page .forest-life-list { overflow-wrap:anywhere; }
+.forest-page .hero h1 { max-width:850px; }
+@media(max-width:800px){.forest-page .forest-fact-details{gap:4vw}}
+@media(max-width:520px){.forest-page .forest-fact-details{grid-template-columns:1fr;gap:18px}.forest-page .forest-photo-card h3{font-size:26px}}
